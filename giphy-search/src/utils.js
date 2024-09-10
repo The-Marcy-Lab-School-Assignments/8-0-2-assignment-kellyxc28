@@ -1,4 +1,4 @@
-export const handleFetch = async (url, options = {}) => {
+const handleFetch = async (url, options = {}) => {
   try {
     const response = await fetch(url, options);
     const { ok, status, statusText, headers } = response;
@@ -14,3 +14,5 @@ export const handleFetch = async (url, options = {}) => {
     return [null, error];
   }
 };
+
+export default handleFetch;

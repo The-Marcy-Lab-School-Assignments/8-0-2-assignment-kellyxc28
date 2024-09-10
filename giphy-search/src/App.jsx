@@ -1,9 +1,9 @@
 import NavBar from './components/NavBar'
 import GifContainer from './components/GifContainer'
 import GifSearch from './components/GifSearch'
-import { handleFetch } from './utils';
+import handleFetch from './utils';
 import { useState, useEffect } from 'react';
-import { API_KEY } from './config';
+import API_KEY from './config';
 
 const URL = `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=25&offset=0&rating=g&bundle=messaging_non_clips`
 
