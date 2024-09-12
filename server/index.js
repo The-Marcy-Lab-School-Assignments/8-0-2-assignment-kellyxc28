@@ -1,4 +1,5 @@
 // Imports
+/** FEEDBACK: This is a great start! You are so close! I left some feedback on where you might've stumbled on a bug! */
 const express = require('express');
 const path = require('path');
 const fetchData = require('./fetchData');
@@ -6,6 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // Setup 
+/** FEEDBACK: is the name of our front-end folder called frontend? */
 const pathToDistFolder = path.join(__dirname, '../frontend/dist');
 const app = express();
 
