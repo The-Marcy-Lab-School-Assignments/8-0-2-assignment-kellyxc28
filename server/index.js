@@ -13,8 +13,8 @@ const app = express();
 const serveStatic = express.static(pathToDistFolder);
 
 const serveGifs = async (req, res, next) => {
-  // const API_URL = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&limit=3&rating=g`;
-  const API_URL = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&limit=6&offset=0&rating=g&bundle=messaging_non_clips`;
+  const API_URL = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&limit=20&rating=g`;
+  // const API_URL = `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.API_KEY}&limit=6&offset=0&rating=g&bundle=messaging_non_clips`;
   const [data, error] = await fetchData(API_URL);
   if (error) {
     console.log(error.message);
