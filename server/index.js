@@ -8,7 +8,7 @@ dotenv.config();
 
 // Setup 
 /** FEEDBACK: is the name of our front-end folder called frontend? */
-const pathToDistFolder = path.join(__dirname, '../frontend/dist');
+const pathToDistFolder = path.join(__dirname, '../giphy-search/dist');
 const app = express();
 
 // Controllers 
